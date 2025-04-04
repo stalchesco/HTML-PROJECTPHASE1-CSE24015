@@ -1,0 +1,102 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background: #8B0000;
+color : white;
+animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+.header{
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding :20px 10%;
+background: #111111;
+display: flex;
+justify-content: space-between;
+}
+
+.logo{
+font-size: 25px;
+color: white;
+text-decoration: none;
+font-weight: 600;
+}
+
+.logo::before{
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background: #8B0000;
+animation: showRight 1s ease forwards;
+animation-delay: .2s;
+}
+
+
+.navi a{
+position: relative;
+font-size: 18px;
+color: #8B0000 ;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s;
+}
+
+.navi a:hover,
+.navi a.active{
+color: #111111;
+font-size: 20px;
+}
+
+.container {
+    position: fixed;
+    display: inline-block;
+}
+
+.desc {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111111;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s, transform 0.4s ease-in-out;
+}
+
+/* Show description smoothly on hover */
+.container:hover .desc {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+    
+    @keyframes showRight{
+    100%{
+    width: 0;
+    }
+    }

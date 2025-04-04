@@ -1,0 +1,52 @@
+					PORTFOLIO
+The first page is the home page which says about me and my ambitions. There is a nav bar through which people can see about me, my projects and my phone number to contact me. The first page also contains two options, to hire me or to talk to me, on clicking hire me people will be able to send an email to me, on clicking lets talk people will be able to go to the contact page of the website. The footer section contains link to GitHub, Instagram and LinkedIn.
+
+CSS and Methods used in Home page of Portfolio:
+
+used to link the unique styling of the characters used in the HTML by using the link tag and href="https://fonts.googleapis.com/css?family=Audiowide"
+
+used to get the icons of Instagram, Linked in and GitHub by using link tag and href attribute = https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css
+
+used to make the website responsive by using media query and meta tag with name="viewport".
+
+Gave all elements in the webpage box-sizing as border box or else we may have problems with formatting the webpage. Added hover pseudo class to make the appearance of the website seem more appealing.
+
+The body has the background color of #8B0000 and text is to be represented in white color
+Also added animation such that when the page is being faded in. It makes the website seem more interesting to go through.
+
+A header container tag enclosing the nav tag and respective tags to be shown in the header as well as in the nav tag were created. A header class was linked to the header. The header class consisted of background color: #111111 which is black. Display was given as flex so that each link in the nav would appear on the left to each other, and justify content: space between to have space in between those links or else the links would be present close to each other, making it not look good. The "Charu" link was linked to logo class, whose color was changed to white. The logo has a pseudo element .logo::before states how the logo must be displayed before the loading of the webpage. Also added animation in the pseudo element.
+When our cursor is on the links (Home, Projects, Contact and About) in the nav tag they disappear into the color of the nav due to the hover and active pseudo classes.
+
+Used section element which was linked to class home which contains align-items: center; 
+Inside the selection a div tag was given which was linked to home-content class, which comprised of specific width and font size and color not only for itself but also for the elements which came under it such as h1 and h3 and p. Inside the current div a new div was created which contained two new links, hire me and contact me. This new div was connected to the class btn-box which states about the div's contents to be displayed sided by side ; and the width and height of the div. Inside the div, the links(Hire me, Contact Me) properties are described in the css file, such that their display should have inline-flex and used justify-content : center to make them links appear in the centre. Added :before pseudo class and hover to give the effect when placing the cursor on them. 
+
+The footer section contains links with icons which on clicking them, will take them to the respective accounts of mine. They also contain justify-content and display: flex and consists of hover and before but removed position: fixed so that when cursor is on top of one icon, the one's before it will be covered by the background color.
+
+We use @keyfrmes a CSS rule used to define animations by specifying the styles to be applied at various points during the animation duration, allowing for smooth transitions and transformations of web elements. 
+
+
+
+About
+
+In about its the same body, same header as that of the home page, the same nav with the same links as that of the home page with the same animations.
+In this page it is about where I studied. And describes how those institutions developed me to me. There is an image of the symbol of the institution which I studied in and when we move the cursor toward that area, the description of the particular institution is shown.
+I created a div which has a margin-top of 105px and border box sizzing. Then, created another div inside the current div with margin property so as to make it look more structured, which is linked with a class called container  whose display is inline-block .This div contains the image of a particular institution, which has display in the form of block and borer-radius: 50% float property to keep it left and a width of 10% so that it fits in well, then a new div was created in the current div which also has margin, width, float properties and is linked to class desc which has transition and has hover property to do the animation which was mentioned above. After giving the description all the divs were closed.
+
+Like this there are 4 more sections with images of 4 institution all aligned to the left of the page, such that when we move our cursor near that image we get the description of each institution, I have been in.
+
+
+Project
+
+In project, the layout is same as that of the homepage and has the same animation when getting loaded. In the webpage the main information which I want to convey is centred on the page using div, and the link to the project is given in the page and has animation added to it, such that the link disappears when the cursor is present on the link. The link gets disappeared into the background, created by using hover pseudo class. Each project has its own link. The link is present in the name of the project itself, in the form of list.
+
+Contact
+
+In contact, the layout is same as that of the home page and has the same animation when getting loaded. In the webpage the main information which I want to convey is centred on the page using div, the contacts of my different social accounts are given which is embedded in the logo of the respective social accounts. When the cursor is moved to the logo of the respective social account, it also gets vanished into the logo's background using hover pseudo class animation. The page contains every social account and links through which people can contact me.
+The contacts are exhibited in the form of list.
+
+ 
+
+
+
+
+
